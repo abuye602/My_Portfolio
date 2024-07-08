@@ -480,7 +480,7 @@ span {
   }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 320px) {
   .home-img img {
     width: 90vw;
   }
