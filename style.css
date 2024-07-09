@@ -280,7 +280,7 @@ span {
 .contact-info {
   display: flex;
   justify-content: space-around;
-  padding: 15rem 0 0 70px;
+  padding: 15rem 0 0;
 }
 
 .contact .contact-info-item {
@@ -433,18 +433,6 @@ span {
 
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact-info {
-    display: flex;
-    justify-content: space-between;
-  }
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text inside each item */
-    padding: 20px 0 0;
   }
 
   .contact-info-item {
