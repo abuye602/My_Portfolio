@@ -466,6 +466,31 @@ span {
   .home-content {
     text-align: center;
   }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside each item */
+    padding: 20px 0 0;
+  }
+
+  .contact-info-item {
+    margin-bottom: 1rem; /* Add some space between items */
+  }
+
+  .contact .contact-info-item {
+    display: 0 0 25%;
+    font-size: 15px;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .contact-info-item p {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 320px) {
