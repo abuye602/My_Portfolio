@@ -44,10 +44,7 @@ section {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-}
-
-.header.sticky {
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: padding 0.3s;
 }
 
 .logo {
@@ -80,10 +77,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10rem 9% 2rem; /* Ensure padding doesn't cause overflow */
 }
 
 .home-img img {
-  width: 35vw;
+  width: 100%;
+  max-width: 35vw;
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -353,14 +352,6 @@ span {
 }
 
 @media (max-width: 991px) {
-  .header {
-    padding: 2rem 3%;
-  }
-
-  section {
-    padding: 10rem 3% 2rem;
-  }
-
   .portfolio {
     padding-bottom: 7rem;
   }
@@ -378,11 +369,18 @@ span {
   #menu-icon {
     display: block;
   }
+  .header {
+    width: 100vw;
+    max-width: 100%;
+    padding: 2rem 3rem;
+  }
 
   .navbar {
     position: absolute;
     top: 100%;
     left: 0;
+    max-width: 100%;
+
     width: 100%;
     padding: 1rem 3%;
     background: var(--bg-color);
@@ -403,6 +401,8 @@ span {
 
   .home {
     flex-direction: column;
+    padding: 10rem 3% 2rem; /* Adjust padding to reduce total width */
+    max-width: 100%;
   }
 
   .home-content h3 {
@@ -496,6 +496,10 @@ span {
 @media (max-width: 320px) {
   .home-img img {
     width: 90vw;
+  }
+
+  .header {
+    padding: 2rem 5px 2rem 2rem;
   }
 
   .about-img img {
