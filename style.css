@@ -26,11 +26,13 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
+  width: 100%;
 }
 
 .header {
@@ -78,6 +80,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 10rem 9% 2rem; /* Ensure padding doesn't cause overflow */
+  width: 100%;
 }
 
 .home-img img {
@@ -414,8 +417,9 @@ span {
   }
 
   .home-img img {
-    width: 70vw;
     margin-top: 4rem;
+    min-width: 200px;
+    min-height: 200px;
   }
 
   .about {
@@ -494,16 +498,8 @@ span {
 }
 
 @media (max-width: 320px) {
-  .home-img img {
-    width: 90vw;
-  }
-
   .header {
     padding: 2rem 5px 2rem 2rem;
-  }
-
-  .about-img img {
-    width: 90vw;
   }
 
   .contact-info {
