@@ -40,13 +40,14 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 2rem 3%;
   background: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   transition: padding 0.3s;
+  box-shadow: 3px 7px 12px 3px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -66,6 +67,10 @@ section {
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
+}
+
+.navbar a .fa-envelope {
+  font-size: 22px;
 }
 
 #menu-icon {
